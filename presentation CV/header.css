@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+/* -----header----- */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+nav > a{
+    color: red;
+    text-decoration: none;
+    padding: 17px;
+    font-size: 24px;
+}
+nav > a:hover{
+    color: yellow;
+    box-shadow: 0 0 65px red;
+}
+header > img{
+    height: 100px;
+    width: 280px;
+}
+/* --------section-------- */
+section{
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    border: 1px;
+}
+.section1 img{
+    width:500px;
+    height:500px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+section h2{
+    position: absolute;
+    font-size: 45px;
+    color: red;
+    height: 102px;
+    width: 410px;
+    margin-left: 459px;
+   
+}
+.section1 > p {
+    margin-top: 160px;
+    margin-right: 10px;
+    width: 800px;
+    height: 150px;
+    font-size: 25px;
+    text-align: center;
+}
+section > div{
+    background-color: black;
+    border-style: ridge;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 1s;
+}
+section > div:hover{
+    box-shadow: 0 0 65px red;
+    transform: 1s;
+}
+div h1 ,p{
+    font-size: 20px;
+    color: red;
+}
+section button{
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+/* -------footer------ */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+ul > a{
+    color: red;
+    text-decoration: none;
+    padding: 17px;
+    font-size: 24px;
+}
+ul > a:hover{
+    color: yellow;
+    box-shadow:0 0 65px red;
+}
+footer > img{
+    height: 100px;
+    width: 280px;
+}
+   
