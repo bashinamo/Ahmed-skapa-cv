@@ -12,20 +12,21 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: black;
+    border-bottom: 1px solid white;
+    
+}
+header img {
+    width: 15%;
 }
 nav > a{
     color: red;
     text-decoration: none;
     padding: 17px;
-    font-size: 24px;
+    font-size: 29px;
 }
 nav > a:hover{
     color: yellow;
     box-shadow: 0 0 65px red;
-}
-header > img{
-    height: 100px;
-    width: 280px;
 }
 /* --------section-------- */
 section{
@@ -40,14 +41,17 @@ section{
     object-fit: cover;
     border-radius: 50%;
 }
-section h2{
-    position: absolute;
+section h1{
     font-size: 45px;
     color: red;
-    height: 102px;
-    width: 410px;
-    margin-left: 459px;
-   
+}
+.section1 h2{
+    color: red;
+    font-size: 50px;
+    position: absolute;
+    width: 600px;
+    text-align: end;
+    margin-left: 260px;
 }
 .section1 > p {
     margin-top: 160px;
@@ -57,6 +61,9 @@ section h2{
     font-size: 25px;
     text-align: center;
 }
+section:nth-child(2){
+    justify-content: center;
+}
 section > div{
     background-color: black;
     border-style: ridge;
@@ -64,9 +71,10 @@ section > div{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 29px;
+    border-radius: 15px;
     transition: 1s;
+    margin: 10px;
 }
 section > div:hover{
     box-shadow: 0 0 65px red;
@@ -80,27 +88,67 @@ section button{
     background-color: yellow;
     padding: 10px;
     border-radius: 20px;
-    margin-top: 30px;
+    margin-top: 38px;
 }
 /* -------footer------ */
 footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    background-color: black;
+    border-top: 1px solid white;
+    
 }
-ul > a{
+footer img {
+    width: 15%;
+}
+nav > a{
     color: red;
     text-decoration: none;
     padding: 17px;
-    font-size: 24px;
+    font-size: 29px;
 }
-ul > a:hover{
+nav > a:hover{
     color: yellow;
-    box-shadow:0 0 65px red;
-}
-footer > img{
-    height: 100px;
-    width: 280px;
+    box-shadow: 0 0 65px red;
 }
    
+
+@media (max-width: 921px){
+    nav > a{
+        padding: 10px;
+        font-size: 22px;
+    }
+    .section1{
+        flex-direction: column;
+        gap: 0;
+    }
+    .section1 img{
+        width:100%;
+        margin-top: 30px;
+        border-radius: 4px;
+    }
+    .section1 h2{
+        position: absolute;
+        top: 35px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        font-size: 1.8rem;
+    }
+    .section1 > p {
+        margin-top: 0;
+        margin-right: 0;
+        width: 100%;
+        height: auto;
+    }
+    section:nth-child(2){
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    section:nth-child(2) > div{
+        width: 150px;
+        margin: 0;
+    }
+}

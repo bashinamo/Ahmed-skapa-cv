@@ -12,6 +12,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: black;
+    border-bottom: 1px solid white;
 }
 header img {
     width: 15%;
@@ -20,7 +21,7 @@ nav > a{
     color: red;
     text-decoration: none;
     padding: 17px;
-    font-size: 24px;
+    font-size: 29px;
 }
 nav > a:hover{
     color: yellow;
@@ -34,7 +35,7 @@ section img {
     border-radius: 50%;
 }
 #Inledning h2{
-    margin-top: 20px;
+    margin: 20px 0;
     font-size: 24px;
 }
 #Inledning p{
@@ -43,7 +44,6 @@ section img {
     color: red;
 }
 #Inledning a{
-    margin: 50px;
     font-size: 22px;
     color: red;
 }
@@ -66,35 +66,45 @@ section {
 }
 /* -------footer------ */
 footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    background-color: black;
+    border-top: 1px solid white;
+    
 }
-ul > a{
+footer img {
+    width: 15%;
+}
+nav > a{
     color: red;
     text-decoration: none;
     padding: 17px;
-    font-size: 24px;
+    font-size: 29px;
 }
-ul > a:hover{
+nav > a:hover{
     color: yellow;
-    box-shadow:0 0 65px red;
+    box-shadow: 0 0 65px red;
 }
-footer  img{
-    width: 15%;
-}
+   
 
-/* Media
-@media only screen 
-  and (max-device-width: 480px)
-   {
+@media (max-width: 921px){
+    nav > a{
+        padding: 10px;
+        font-size: 22px;
+    }
     #Inledning{
-        display: inline;
+        display: flex;
+        flex-direction: column;
     }
-    .card {
-        border: 1px solid rgb(26, 20, 199);
-        margin: 23px;
-        width : 100% !important
+    #Inledning > div{
+        margin-right: 0;
+        margin: 10px 0;
     }
-} */
+    footer{
+        position: relative;
+    }
+}
