@@ -1,0 +1,53 @@
+#stycke{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 40px;
+ }
+.work{
+    color: beige;
+    width: 23%;
+    background-color: rgb(174, 26, 26);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
+}
+.work h3{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.work ul{
+    list-style: none;
+}
+.Education{
+    color: beige;
+    background-color: rgb(174, 26, 26);
+    border-radius: 10px;
+    padding: 10px;
+}
+.Education h3{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+.Education li{
+    list-style: none;
+    font-size: 18px;
+}
+.skills{
+    color: beige;
+    width: 24%;
+    background-color: rgb(174, 26, 26);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
+}
+.skills h3{
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 25px;
+}
+.skills ul{
+    list-style: none;
+}
+

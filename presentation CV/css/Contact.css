@@ -1,0 +1,49 @@
+#Inledning img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#Inledning h2{
+    margin: 20px 0;
+    font-size: 24px;
+}
+#Inledning p{
+    margin-top: 15px;
+    font-size: 24px;
+    color: red;
+}
+#Inledning a{
+    font-size: 22px;
+    color: red;
+}
+#Inledning > div {
+    border: 1px solid rgb(252, 247, 247);
+    margin-right: 5px;
+    margin: 40px;
+    text-align: center;
+    padding: 17px;
+    min-width: 350px;
+}
+section {
+    color: white ;
+    font-size: 15px;
+    text-align: center;
+}
+#Inledning {
+    display: flex;
+    justify-content: center;
+}
+   
+
+@media (max-width: 921px){
+   
+    #Inledning{
+        display: flex;
+        flex-direction: column;
+    }
+    #Inledning > div{
+        margin-right: 0;
+        margin: 10px 0;
+    }
+
+}

@@ -4,31 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="About.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/About.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <a href="home.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
             <a href="contact.html">Contact</a>
         </nav>
-        <img src="sharingan logo.jpg" alt="">
+        <img src="images/sharingan logo.jpg" alt="">
     </header>
 
     <main>
-        <section class="work">
-            <h3>Work Experience</h3> 
-            <ul>
-                <li>-Egen företagare transport</li>
-                <li>-Tele2 kundtjänst</li>
-                <li>-Egen företagare</li>
-            </ul>
-        </section>
-
-        <section class="Utbildning">
-            <div class="Education">
+        <section id="stycke">
+            <section class="work">
+                <h3>Work Experience</h3> 
                 <ul>
+                    <li>-Egen företagare transport</li>
+                    <li>-Tele2 kundtjänst</li>
+                    <li>-Egen företagare</li>
+                </ul> 
+            </section>
+
+            <section class="Utbildning">
+                <div class="Education">
+                    <ul>
                     <h3>Education</h3>
                     <li>-Yrkeshögskolan (Automations ingenjör)</li>
                     <p>2021-2023</p>
@@ -38,31 +46,24 @@
                     <p>2016</p>
                     <li>-Farsta Gymnasium</li>
                     <p>2009-2012</p>
+                    <ul>
+                </div>
+            </section>
+
+            <section class="skills">
+                <h3>My skills</h3>
                 <ul>
-            </div>
-        </section>
-        <section class="skills">
-            <h3>My skills</h3>
-            <ul>
-                <li>- Administrator</li>
-                <li>- Marketing</li>
-                <li>- Data analysis and statistics</li>
-                <li>- Microsoft Office Professional traffic</li>
-                <li>- Permit for good Financial</li>
-                <li>- Professional traffic </li>
-                <li>- Management Trade</li>
-            </ul>
+                    <li>- Administrator</li>
+                    <li>- Marketing</li>
+                    <li>- Data analysis and statistics</li>
+                    <li>- Microsoft Office Professional traffic</li>
+                    <li>- Permit for good Financial</li>
+                    <li>- Professional traffic </li>
+                    <li>- Management Trade</li>
+                </ul>
+            </section>
+
         </section>
     </main>
-
-    <footer>
-        <nav>
-            <a href="home.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <img src="sharingan logo.jpg" alt="">
-    </footer>
-    
 </body>
 </html>

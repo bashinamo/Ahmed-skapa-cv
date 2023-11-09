@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    box-sizing: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: black;
+}
+/* ------header----- */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-bottom: 1px solid white;
+}
+header img {
+    width: 15%;
+}
+nav > a{
+    color: red;
+    text-decoration: none;
+    padding: 17px;
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+
+}
+nav > a:hover{
+    color: yellow;
+    box-shadow: 0 0 65px red;
+}
+ /* --------main------- */
+ main{
+    font-style: oblique;
+ }
+.active{
+    color: yellow;
+    box-shadow: 0 0 65px red;
+}
+
+@media (max-width: 921px){
+    nav > a{
+        padding: 10px;
+        font-size: 22px;
+    }
+    main{
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        padding: 50px 0;
+    }
+    .work, .Utbildning, .skills, .Education{
+        width: 100%;
+        border-radius: 0;
+    }
+    footer{
+        position: relative;
+    }
+}
