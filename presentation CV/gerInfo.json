@@ -1,0 +1,25 @@
+[
+    {
+        "work": [
+            {
+                "h3Json": "Work Experience",
+                "liJson": "-Egen företagare transport",
+                "li2Json": "-Tele2 kundtjänst",
+                "li3Json": "-Egen företagare"
+            }
+        ],
+        "education": [
+            {
+                "h3Json": "Education",
+                "li": "-Yrkeshögskolan (Automations ingenjör)",
+                "p": "2021-2023",
+                "li1": "-Data IT",
+                "p1": "2013-2014",
+                "li2": "-Väktare",
+                "p2": "2016",
+                "li3": "-Farsta Gymnasium",
+                "p3": "2009-2012"
+            }
+        ]
+    }
+]

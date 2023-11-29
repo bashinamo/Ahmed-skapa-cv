@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/About.css">
     <link rel="stylesheet" href="css/style.css">
-    
-    <script src="js/script.js"></script>
+
+
 </head>
-<body>
+
+<body class="dark-mode">
     <header>
         <nav>
             <a href="index.html">Home</a>
@@ -24,32 +28,55 @@
     </header>
 
     <main>
+        <br>
+        <div class="container">
+            <h1> Dark/Light Mode</h1>
+            <label class="switch">
+                <input type="checkbox" id="modeToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
         <section id="stycke">
             <section class="work">
-                <h3>Work Experience</h3> 
+                <h3 class="workE"></h3>
                 <ul>
-                    <li>-Egen företagare transport</li>
-                    <li>-Tele2 kundtjänst</li>
-                    <li>-Egen företagare</li>
-                </ul> 
+                    <li id="transport"></li>
+                    <li id="tele2"></li>
+                    <li id="egen"></li>
+                </ul>
             </section>
 
-            <section class="Utbildning">
-                <div class="Education">
-                    <ul>
-                    <h3>Education</h3>
-                    <li>-Yrkeshögskolan (Automations ingenjör)</li>
-                    <p>2021-2023</p>
-                    <li>-Data IT</li>
-                    <p>2013-2014</p>
-                    <li>-Väktare</li>
-                    <p>2016</p>
-                    <li>-Farsta Gymnasium</li>
-                    <p>2009-2012</p>
-                    <ul>
+            <section class="Utbildning" id="modal_btn">
+                <div class="education" >
+                    <h3 class="ed_name"></h3>
+                    <a href="#">klicka här</a>
+
                 </div>
             </section>
+            <div id="myModal" class="modal">
 
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <ul>
+
+                    <li id="li_"></li>
+                    <p id="p_"></p>
+ 
+                    <li id="li1"></li>
+                    <p id="p1"></p>
+
+                    <li id="li2"></li>
+                    <p id="p2"></p>
+
+                    <li id="li3"></li>
+                    <p id="p3"></p>
+
+                    <ul>
+                </div>
+              
+              </div>
             <section class="skills">
                 <h3>My skills</h3>
                 <ul>
@@ -65,5 +92,7 @@
 
         </section>
     </main>
+    <script src="main.js"></script>
 </body>
+
 </html>

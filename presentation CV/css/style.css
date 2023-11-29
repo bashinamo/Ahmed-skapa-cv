@@ -4,11 +4,21 @@
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
 }
-body{
-    background-color: black;
+.dark-mode{
+    background : black
+}
+.light-mode{
+    background-color: beige !important;
 }
 /* ------header----- */
-header{
+.light-mode header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+    border-bottom: 1px solid white;
+}
+.dark-mode header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,6 +41,10 @@ nav > a:hover{
     color: yellow;
     box-shadow: 0 0 65px red;
 }
+.light-mode nav > a:hover{
+    color: black;
+    box-shadow: 0 0 65px rgb(0, 255, 183);
+}
  /* --------main------- */
  main{
     font-style: oblique;
@@ -39,7 +53,10 @@ nav > a:hover{
     color: yellow;
     box-shadow: 0 0 65px red;
 }
-
+.light-mode .active{
+    color: black;
+    box-shadow: 0 0 65px rgb(0, 255, 183);
+}
 @media (max-width: 921px){
     nav > a{
         padding: 10px;
