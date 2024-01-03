@@ -4,7 +4,7 @@ const education = document.querySelector('.ed_name');
 async function getdata(){
 
     //anropar json filen 
-    const pickup = await fetch ("gerinfo.json");
+    const pickup = await fetch ("gerInfo.json");
     const data = await pickup.json();
 
     // skapar 2 arrayer med data (Education, work)
@@ -39,6 +39,21 @@ async function getdata(){
 }
 getdata();
 
+let requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+
+fetch("https://api.github.com/users/bashinamo/repos", requestOptions)
+  .then(response => response.json())
+  .then(result => {
+    let mina_projekt = result;
+    
+    // console.log(mina_projekt[0].name)
+    // console.log(mina_projekt[1].description)
+    // console.log(result)
+  })
+  .catch(error => console.log('error', error));
 //Skiftar mellan dar/Light mode 
 document.addEventListener('DOMContentLoaded', function () {
     const modeToggle = document.getElementById('modeToggle');
@@ -80,32 +95,39 @@ if(document.querySelector('title').innerHTML == 'About')
       modal.style.display = "none";
     }
   }
+
+
+  // const btnMe = document.getElementById('btnMe');
+  // const close = document.getElementById('stäng');
+  // const modall = document.getElementById('myModal');
+
+  // btnMe.onclick = function(){
+  //   modall.style.display = 'block';
+  // }
+
+  // click.onclick = function() {
+  //   modall.style.display = "none";
+  // }
+
+  // window.onclick = function(event) {
+  //  (event.target == modal) {
+  //     modal.style.display = "none";
+  //   }
+  // }
+
+
+
+
+
+
+
+    
+
+
+
   
 
-let isbtnMe = false;
-const btnMe =document.getElementById('btnMe');
-const modell = document.getElementById('modell');
 
-// Lägg till en händelselyssnare för knappen
-if(document.querySelector('title').innerHTML == 'Home')
-
-btnMe.addEventListener('click', function() {
-  
-  // Om isbtnMe är false, ändra det till true och gör något
-  if (!isbtnMe) {
-      isbtnMe = true;
-      modell.style.transform = 'perspective(800px) rotateY(180deg)';
-
-      // Gör något när knappen är på
-  } else {
-    modell.style.transform = 'perspective(800px) rotateY(0deg)';
-      // Om isbtnMe är true, ändra det till false och gör något annat
-      isbtnMe = false;
-  }
-});
-
-// const byt_sida = document.getElementById(byt);
-// byt.textContent = 'ahmed hetr jag'.innerHTML == ('byt');
 
 
 

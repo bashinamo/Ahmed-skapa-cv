@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/spel.css">
+    <title>Sten & sax & påse</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+    </nav>
+
+    <div class="container">
+        <h1>Sten, Sax, Påse</h1>
+        
+        <div id="result">Välj ett drag för att börja!</div>
+        <br>
+        <div id="score">Spelare: 0 | Dator: 0</div>
+        <br>
+        <div id="choices">
+            <button onclick="playerChoice('rock')">Sten</button>
+            <button onclick="playerChoice('paper')">Påse</button>
+            <button onclick="playerChoice('scissors')">Sax</button>
+        </div>
+    </div>
+    <script src="spel.js"></script>
+</body>
+</html>
